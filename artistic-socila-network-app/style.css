@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Noto Sans', sans-serif;
+}
+.app {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 620px;
+  border: 2px solid black;
+}
+
+.app .app__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px;
+  left: -2px;
+  border: 2px solid black;
+  border-bottom: 0;
+  height: 40px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.app .app__contents {
+  height: 100%;
+  overflow-y: auto;
+  background: lightgray;
+}
+
+.app .app__header .header-speaker {
+  width: 72px;
+  height: 5px;
+  background: #000;
+  border-radius: 20px;
+  margin-right: 12px;
+}
+.app .app__header .header-sensor {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  margin-right: 12px;
+}
+.app .app__header .header-camera {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+}
+
+/* ------- Global ------- */
+:root {
+  --gradientBg: linear-gradient(to right, #a582df, #75b9f8);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fake-bg {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 79%;
+  transform: translateX(-50%);
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* ------- Header ------- */
+.header {
+  position: relative;
+  background: var(--gradientBg);
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 12px 12px 12px;
+  box-sizing: border-box;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  z-index: 12;
+}
+.header .header__icons {
+  display: flex;
+}
+
+.header .header__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.header .header__title span:nth-child(2) {
+  display: block;
+  margin-left: 25px;
+}
+
+.header .header__icons .header__icon:first-child {
+  margin-right: 20px;
+}
+.header .header__icons .header__icon:nth-child(2) {
+  margin-right: 20px;
+}
+.header .header__icons svg {
+  fill: #fff;
+  width: 18px;
+}
+/* ------- Matched List ------- */
+.matched__list {
+  position: relative;
+  padding: 25px 20px;
+  z-index: 11;
+}
+
+.matched__list .list__divider {
+  width: 90%;
+  height: 1px;
+  background: gray;
+  margin-left: 32px;
+  margin-top: 12px;
+}
+
+.matched__list .list__title {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 12px;
+}
+
+.matched__list .list__count {
+  color: gray;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 42px;
+}
+
+.matched__list .list__count .list__icon-check svg {
+  fill: lightgray;
+  width: 18px;
+}
+
+.matched__list .list__results {
+  margin-top: 30px;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-gap: 32px;
+}
+
+.matched__list .list__results .result__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+}
+.matched__list .list__results .result__item img {
+  width: 52px;
+  height: 52px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.matched__list .list__results .result__item .item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: -30px;
+}
+
+.matched__list .list__results .result__item .item__info h3 {
+  font-size: 15px;
+}
+.matched__list .list__results .result__item .item__info h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: gray;
+}
+.matched__list .list__results .result__item svg {
+  width: 18px;
+  margin-right: 43px;
+  fill: lightgray;
+}
+.matched__list .list__results .result__item .item__icon-check {
+}
+
+.matched__list .matched__follow-button {
+  position: fixed;
+  bottom: 37px;
+  right: 15px;
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background: var(--gradientBg);
+  font-size: 12px;
+  padding: 20px 40px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.matched__list .matched__follow-button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
