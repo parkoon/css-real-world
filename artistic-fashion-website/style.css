@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* ------- Shared ------- */
+:root {
+  --greyColor: rgba(0, 0, 0, 0.6);
+}
+
+/* ------- Header ------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header .header__column:first-child {
+  margin-left: 24px;
+}
+.header .header__column:last-child {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+.header .header__column .header__logo {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.header .header__column .header__nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  grid-auto-flow: column;
+  grid-gap: 32px;
+  font-weight: bold;
+}
+
+.header .header__column svg {
+  width: 17px;
+  fill: var(--greyColor);
+}
+
+.header .header__column .header__lang {
+  text-transform: uppercase;
+  margin-left: 32px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--greyColor);
+}
+
+/* ------- Main ------- */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+}
+
+.main .main__photo {
+  background-image: url(https://picsum.photos/1000/1000/?random);
+  background-size: cover;
+  background-position: center center;
+}
+
+.main .main__info {
+  background-color: #efefef;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.main .main__info .main__title {
+  margin-top: 220;
+  margin-bottom: 220px;
+  font-size: 4rem;
+  padding-left: 220px;
+}
+
+.main .main__info .pagination {
+  font-weight: bold;
+  padding-left: 220px;
+}
+
+.main .main__info .pagination .current-page {
+  font-size: 2rem;
+}
+
+.main .main__info .pagination .total-page {
+  color: var(--greyColor);
+}
+
+.main .main__info .page-nav {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 22px;
+  box-sizing: border-box;
+}
+
+.main .main__info .page-nav .nav__arrow {
+  font-weight: bold;
+  color: var(--greyColor);
+}
+
+.main .main__info .page-nav svg {
+  width: 22px;
+  fill: var(--greyColor);
+  margin-left: 7px;
+}
