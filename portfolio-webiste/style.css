@@ -1,0 +1,188 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+
+  /* padding: 50px 0px 50px 20px; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --greyColor: rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  margin-bottom: 72px;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  padding: 40px 35px 0px 35px;
+}
+.header .header__logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.header .header__titles {
+  margin-left: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--greyColor);
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+.header .header__titles .header__title:first-child {
+  margin-right: 24px;
+}
+
+.header .header__titles .header__title:last-child {
+  color: #000;
+}
+
+.header .header__icons {
+  text-align: right;
+}
+
+.header .header__icons svg {
+  width: 17px;
+}
+
+.header .header__icons .header__icon {
+  margin-right: 27px;
+}
+
+.header .header__icons .header__icon.heart svg {
+  fill: var(--greyColor);
+}
+
+.main {
+  /* padding-top: 72px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  height: 100%;
+  grid-gap: 32px;
+  padding: 0px 0px 0px 35px;
+}
+
+.main .column:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.main .column:first-child .title {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin: 0;
+}
+
+.main .column:first-child .subtitle {
+  color: var(--greyColor);
+  margin-top: 12px;
+  line-height: 24px;
+  width: 70%;
+}
+
+.main .column:first-child .more .more__icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .column:first-child .more {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.main .column:first-child .more .more__text {
+  color: var(--greyColor);
+  margin-left: 12px;
+}
+.main .column:first-child .more .more__icon svg {
+  fill: var(--greyColor);
+}
+
+.main .column .items {
+  display: grid;
+  align-items: center;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main .column .items img {
+  width: 100%;
+  height: 370px;
+}
+
+.main .column .items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  border-left: 1px dotted rgba(0, 0, 0, 0.2);
+}
+
+.main .column .items .item .item__title {
+  color: var(--greyColor);
+  font-size: 0.9rem;
+  margin-left: 12px;
+  margin-bottom: 7px;
+}
+
+.main .column .items .item .item__subtitle {
+  color: var(--greyColor);
+  margin-left: 12px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.main .column .items .item .item__number {
+  padding: 20px 12px;
+  font-weight: bold;
+  color: var(--greyColor);
+  font-size: 0.9rem;
+}
+
+.float__button {
+  position: absolute;
+  bottom: 42px;
+  left: 35px;
+  display: flex;
+  align-items: center;
+  color: var(--greyColor);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.float__button .float__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.float__button svg {
+  width: 12px;
+  fill: var(--greyColor);
+}
