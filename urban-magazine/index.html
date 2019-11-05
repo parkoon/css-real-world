@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Urban Magazine</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar__menu">
+        <span class="manu__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+          >
+            <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+          </svg>
+        </span>
+      </div>
+
+      <ul class="navbar__list">
+        <li>about</li>
+        <span>X</span>
+        <li>categories</li>
+        <span>X</span>
+        <li>features</li>
+      </ul>
+
+      <div class="navbar__circle"></div>
+    </nav>
+
+    <main class="main__wrapper">
+      <!-- Header -->
+      <header class="header">
+        <h2 class="header__title">Popular Stories</h2>
+        <div class="header__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066 9.922.749-2.534-2.974-6.993-3.294-9.922-.749z"
+            />
+          </svg>
+        </div>
+      </header>
+
+      <!-- Slider -->
+      <main class="slider">
+        <div class="slider__arrow--left">
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          >
+            <path
+              d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z"
+            />
+          </svg>
+        </div>
+        <div class="slider__grid">
+          <section class="slider__photo"></section>
+          <section class="slider__content">
+            <div class="content__type">lifestyle</div>
+            <h1 class="content__title">
+              The Joys and Pitfalls of Solo Travel
+            </h1>
+            <p class="content__body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio assumenda officiis labore aliquid voluptatem deleniti
+              omnis a facilis perspiciatis quas similique ducimus saepe, alias,
+              vel quam! Aut eveniet a amet.
+            </p>
+
+            <div class="content__date">FEB 2, 2017</div>
+          </section>
+        </div>
+        <div class="slider__arrow--right">
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          >
+            <path
+              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+            />
+          </svg>
+        </div>
+      </main>
+
+      <footer class="pagination">
+        <div class="pagination__number pagination__number--selected">1</div>
+        <div class="pagination__number">2</div>
+        <div class="pagination__number">3</div>
+        <div class="pagination__number">4</div>
+      </footer>
+    </main>
+  </body>
+</html>
